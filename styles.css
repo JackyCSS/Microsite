@@ -26,6 +26,25 @@ body{
     background-position: 125% 150%;
 }
 
+.header-text{
+    margin-top: 20%;
+    font-size: 18px;
+    color: #fff;
+}
+
+.header-text h1{
+    font-weight: 500;
+    font-size: 86px;
+    max-width: 550px;
+    line-height: 95px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.header-text .icon img{
+    width: 60px;
+}
+
 .top-nav{
     display: flex;
     font-weight: bolder;
@@ -61,6 +80,46 @@ body{
     justify-content: flex-end;
     margin: 10px 30px 10px;
 
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        padding-left: 5%; 
+        padding-right: 5%; 
+        background-size: 100%; 
+        background-image: none;
+    }
+
+    .header-text {
+        margin-top: 10%; 
+        font-size: 15px; 
+    }
+
+    .header-text h1 {
+        font-size: 48px; 
+        max-width: 100%; 
+        line-height: 1.2; 
+        margin-top: 10px; 
+        margin-bottom: 10px; 
+    }
+
+    .top-nav {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 15px center; 
+        border-bottom: 1px solid #e91e63; 
+    }
+
+    .top-nav ul li {
+        margin-right: 0; 
+        margin-top: 5px; 
+        margin-bottom: 5px; 
+    }
+
+    .top-nav button {
+        display: none;
+    }
 }
 
 .side-nav{
@@ -104,25 +163,11 @@ body{
     width: max-content;
 }
 
-.header-text{
-    margin-top: 20%;
-    font-size: 18px;
-    color: #fff;
+@media (max-width: 768px) {
+    .side-nav {
+        display: none; 
+    }
 }
-
-.header-text h1{
-    font-weight: 500;
-    font-size: 86px;
-    max-width: 550px;
-    line-height: 95px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-}
-
-.header-text .icon img{
-    width: 60px;
-}
-
 
 /*Timeline*/
 .timeline{
@@ -269,7 +314,7 @@ body{
     left: -15px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .timeline{
         margin: 50px auto;
     }
@@ -360,6 +405,18 @@ body{
     transform: scale(1.1);
 }
 
+@media (max-width: 768px) {
+    .gallery {
+        width: 100%; 
+        overflow-x: auto; 
+    }
+
+    .gallery div {
+        grid-template-columns: repeat(1, auto); 
+    }
+}
+
+
 /*Video*/
 .video-container{
     background: linear-gradient(#000000, #241021);
@@ -377,6 +434,12 @@ body{
     justify-content: center;
     margin: 2% auto;
     border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .responsive-video {
+        width: 100%; 
+    }
 }
 
 /*Quiz*/
@@ -451,6 +514,21 @@ button{
 
 button:hover{
     background-color: #e91e63;
+}
+
+@media (max-width: 768px) {
+    .quiz-container {
+        width: 100%; 
+        max-width: none; 
+        margin: 20px auto; 
+    }
+
+    .quiz-text {
+        width: 100%; 
+        max-width: none; 
+        margin: 20px auto; 
+        margin-bottom: 60px; 
+    }
 }
 
 /*Footer*/
@@ -598,7 +676,7 @@ hr{
     }
 }
 
-@media (max-width: 700px){
+@media (max-width: 768px){
     footer{
         bottom: unset;
     }
